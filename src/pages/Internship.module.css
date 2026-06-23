@@ -1,0 +1,127 @@
+.container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #fafaeb, #f4f5e6, #C19A6B, #CD7F32, #ffdcc1);
+  background-size: 400% 400%;
+  animation: bgGradient 15s ease infinite;
+}
+
+@keyframes bgGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.formCard {
+  width: 100%;
+  max-width: 800px;
+  padding: 48px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--color-earth-dark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--color-earth-dark);
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldGroup label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.inputGlass {
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-bottom: 2px solid rgba(142, 78, 0, 0.1);
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  border-radius: 4px 4px 0 0;
+}
+
+.inputGlass:focus {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid var(--color-bronze);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.submitBtn {
+  display: inline-block;
+  background-color: var(--color-bronze);
+  color: white;
+  padding: 16px 48px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(205, 127, 50, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 32px;
+}
+
+.submitBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(205, 127, 50, 0.4);
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .formCard {
+    padding: 32px 24px;
+  }
+}
