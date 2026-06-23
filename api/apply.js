@@ -23,7 +23,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: process.env.SMTP_USER,
-    to: 'bpattnaik.bitu9@gmail.com, another-colleague@gmail.com', // 👈 Add multiple emails here separated by commas
+    to: 'bpattnaik.bitu9@gmail.com, jenabibek@gmail.com',
     subject: `New Internship Application: ${full_name}`,
     text: `
 Name: ${full_name}
