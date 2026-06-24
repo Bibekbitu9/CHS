@@ -29,9 +29,9 @@ const Navbar = () => {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}
       style={{
-        background: scrolled ? 'rgba(15, 23, 30, 0.85)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(24px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(205, 127, 50, 0.15)' : 'none',
+        background: 'rgba(15, 23, 30, 0.95)',
+        backdropFilter: 'blur(24px)',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
         transition: 'all 0.4s ease'
       }}
     >

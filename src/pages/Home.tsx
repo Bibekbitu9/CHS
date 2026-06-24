@@ -40,7 +40,7 @@ const Home = () => {
       <HeroSection />
 
       {/* About Snapshot */}
-      <section className={styles.section}>
+      <section className={`${styles.section} section-light`}>
         <div className={`container ${styles.aboutGrid}`}>
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -56,7 +56,7 @@ const Home = () => {
             <p>
               Over seventeen years, CHS has conducted archaeological explorations, documented over a thousand heritage sites, and collaborated with India's foremost heritage institutions.
             </p>
-            <Link to="/about" className="btn-secondary" style={{ marginTop: '16px' }}>Read Full History</Link>
+            <Link to="/about" className="btn-primary" style={{ marginTop: '16px' }}>Read Full History</Link>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
@@ -76,7 +76,7 @@ const Home = () => {
       </section>
 
       {/* Heritage Numbers */}
-      <section className={styles.section}>
+      <section className={`${styles.section} section-dark`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Heritage at a Glance</h2>
           <div className={styles.numbersGrid}>
@@ -89,7 +89,7 @@ const Home = () => {
       </section>
 
       {/* Featured Site */}
-      <section className={styles.section}>
+      <section className={`${styles.section} section-light`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Featured Heritage Site</h2>
           <motion.div 
@@ -115,7 +115,7 @@ const Home = () => {
       </section>
 
       {/* Latest News & Events */}
-      <section className={styles.section}>
+      <section className={`${styles.section} section-dark`}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -145,7 +145,7 @@ const Home = () => {
                   <GlassCard className={styles.newsCard} delay={0}>
                     <span className={styles.newsDate}>{item.date}</span>
                     <h3 className={styles.newsTitle}>{item.title}</h3>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginBottom: '24px' }}>
+                    <p className="text-muted" style={{ fontSize: '0.95rem', marginBottom: '24px' }}>
                       {item.description}
                     </p>
                     <Link to={item.link} style={{ fontWeight: 600, color: 'var(--color-bronze)', textDecoration: 'none' }}>Read More →</Link>
@@ -158,7 +158,7 @@ const Home = () => {
       </section>
 
       {/* Partners Strip */}
-      <section className={styles.section} style={{ paddingTop: '40px', paddingBottom: '40px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+      <section className={`${styles.section} section-light`} style={{ paddingTop: '40px', paddingBottom: '40px' }}>
         <div className="container">
           <div className={styles.partnersStrip}>
             <div className={styles.partner}>IGNCA</div>

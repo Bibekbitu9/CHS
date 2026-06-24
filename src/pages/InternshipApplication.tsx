@@ -27,7 +27,33 @@ const InternshipApplication = () => {
     setValidationErrors({});
     
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const data: Record<string, any> = Object.fromEntries(formData.entries());
+    
+    // Validate Resume
+    const resumeFile = formData.get('resume') as File;
+    if (resumeFile && resumeFile.size > 0) {
+      if (resumeFile.size > 2 * 1024 * 1024) {
+        setError('Resume file size must be less than 2MB.');
+        return;
+      }
+      try {
+        const base64 = await new Promise<string>((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(resumeFile);
+          reader.onload = () => {
+            const result = reader.result as string;
+            resolve(result.split(',')[1]);
+          };
+          reader.onerror = error => reject(error);
+        });
+        data.resumeBase64 = base64;
+        data.resumeName = resumeFile.name;
+      } catch (err) {
+        setError('Failed to process the resume file.');
+        return;
+      }
+    }
+    delete data.resume;
     
     let hasErrors = false;
     const errors: {email?: string, phone?: string} = {};
@@ -79,7 +105,7 @@ const InternshipApplication = () => {
     return (
       <>
         <SEO title="Application Submitted | CHS" description="Your internship application has been submitted successfully." />
-        <div className={styles.container}>
+        <section className={`section-light ${styles.container}`}>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -104,7 +130,7 @@ const InternshipApplication = () => {
             </div>
           </GlassCard>
         </motion.div>
-      </div>
+      </section>
       </>
     );
   }
@@ -112,7 +138,7 @@ const InternshipApplication = () => {
   return (
     <>
       <SEO title="Apply for Internship | Centre for Heritage Studies" description="Apply for a structured internship in archaeology, history, and heritage documentation." />
-      <div className={styles.container}>
+      <section className={`section-light ${styles.container}`}>
         <motion.div
           animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
@@ -190,9 +216,14 @@ const InternshipApplication = () => {
                 </select>
               </motion.div>
 
-              <motion.div variants={itemVariants} className={styles.fieldGroup}>
+              <motion.div variants={itemVariants} className={styles.fieldGroup} style={{ marginBottom: '24px' }}>
                 <label htmlFor="cover_letter">Cover Letter</label>
                 <textarea id="cover_letter" name="cover_letter" className={styles.inputGlass} placeholder="Briefly describe your interest in heritage studies..." required rows={4} style={{ resize: 'vertical' }}></textarea>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className={styles.fieldGroup}>
+                <label htmlFor="resume">Resume / CV (PDF or DOCX, Max 2MB)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" className={styles.inputGlass} style={{ background: 'transparent' }} required />
               </motion.div>
 
               <motion.div variants={itemVariants} className={styles.submitContainer}>
@@ -204,7 +235,7 @@ const InternshipApplication = () => {
           </motion.div>
         </GlassCard>
       </motion.div>
-    </div>
+      </section>
     </>
   );
 };

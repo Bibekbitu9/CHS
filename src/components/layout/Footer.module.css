@@ -1,11 +1,9 @@
 .footer {
   position: relative;
-  background: linear-gradient(to bottom, transparent, rgba(30, 41, 59, 0.4));
-  color: var(--text-muted);
+  background-color: #0F171E;
+  color: #FFFFF0;
   padding: 80px 0 24px;
-  margin-top: 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
 }
 
 .grid {
@@ -25,7 +23,7 @@
   font-size: 1rem;
   line-height: 1.6;
   max-width: 400px;
-  color: var(--text-muted);
+  color: #CBD5E1;
 }
 
 .column h4 {
@@ -47,7 +45,7 @@
 }
 
 .links a {
-  color: var(--text-muted);
+  color: #CBD5E1;
   font-size: 1rem;
   position: relative;
   display: inline-block;

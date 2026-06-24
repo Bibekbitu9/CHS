@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   // but a normal import also works. Using dynamic import ensures clean builds.
   const nodemailer = await import('nodemailer');
 
-  const { full_name, email, phone, institution, field, cover_letter } = req.body;
+  const { full_name, email, phone, institution, field, cover_letter, resumeBase64, resumeName } = req.body;
 
   if (!full_name || !email || !institution || !field || !cover_letter) {
     return res.status(400).json({ error: 'Missing required fields' });
@@ -36,6 +36,16 @@ Cover Letter:
 ${cover_letter}
     `,
   };
+
+  if (resumeBase64 && resumeName) {
+    mailOptions.attachments = [
+      {
+        filename: resumeName,
+        content: resumeBase64,
+        encoding: 'base64'
+      }
+    ];
+  }
 
   try {
     await transporter.sendMail(mailOptions);
