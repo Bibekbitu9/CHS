@@ -47,13 +47,15 @@ const Footer = () => {
       </motion.div>
       
       <motion.div 
-        className={`container ${styles.bottom}`}
+        className={styles.bottom}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
-        <div>&copy; {new Date().getFullYear()} Centre for Heritage Studies, Odisha. All rights reserved.</div>
+        <div className="container">
+          &copy; {new Date().getFullYear()} Centre for Heritage Studies, Odisha. All rights reserved.
+        </div>
       </motion.div>
     </footer>
   );
