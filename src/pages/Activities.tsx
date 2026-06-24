@@ -10,7 +10,7 @@ const Activities = () => {
         description="Stay updated with the latest seminars, webinars, and awareness campaigns conducted by the Centre for Heritage Studies." 
       />
       {/* Intro & Upcoming Events - Light */}
-      <section className="section-light" style={{ padding: '120px 24px 80px' }}>
+      <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Events & Activities</h1>
@@ -32,7 +32,7 @@ const Activities = () => {
       </section>
 
       {/* Lecture Series - Dark */}
-      <section className="section-dark" style={{ padding: '80px 24px' }}>
+      <section className="section-dark" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
         <div className="container">
           <h2 style={{ fontSize: '2.5rem', marginBottom: '32px' }}>Lecture Series</h2>
           <GlassCard delay={0.2} padding="40px">

@@ -212,3 +212,14 @@ a:hover {
     scroll-behavior: auto !important;
   }
 }
+
+/* Mobile Layout Fixes */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .solid-card {
+    padding: 20px !important;
+  }
+}

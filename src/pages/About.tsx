@@ -24,7 +24,7 @@ const About = () => {
       {/* Mission/Vision Section - Dark */}
       <section className="section-dark" style={{ padding: '80px 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '32px' }}>
             <GlassCard delay={0.1}>
               <h3 style={{ color: 'var(--color-bronze)', marginBottom: '16px' }}>Our Mission</h3>
               <p style={{ lineHeight: 1.6 }}>To document, preserve, interpret, and popularize the diverse cultural heritage of Odisha while fostering research, collaboration, education, and public participation in heritage conservation.</p>
@@ -46,7 +46,7 @@ const About = () => {
         <div className="container">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '32px' }}>Office Bearers</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 250px), 1fr))', gap: '24px' }}>
               {[
                 { role: 'Advisor', name: 'Prof. K.K. Basa', desc: 'Chairman, NMA' },
                 { role: 'President', name: 'Prof. Sadasiba Pradhan', desc: 'Former Professor, Utkal University' },

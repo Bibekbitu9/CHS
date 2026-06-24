@@ -10,7 +10,7 @@ const Projects = () => {
         description="Explore the ongoing and completed heritage documentation and conservation projects by the Centre for Heritage Studies." 
       />
       {/* Intro Section - Light */}
-      <section className="section-light" style={{ padding: '120px 24px 80px' }}>
+      <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Projects & Fieldwork</h1>
@@ -22,7 +22,7 @@ const Projects = () => {
       </section>
 
       {/* Flagship Project Section - Dark */}
-      <section className="section-dark" style={{ padding: '80px 24px' }}>
+      <section className="section-dark" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
         <div className="container">
           <GlassCard delay={0.1} padding="40px">
             <span style={{ display: 'inline-block', background: 'rgba(205, 127, 50, 0.2)', color: 'var(--color-ivory)', border: '1px solid var(--color-bronze)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 600, marginBottom: '16px' }}>Flagship Project</span>
@@ -38,7 +38,7 @@ const Projects = () => {
       </section>
 
       {/* Completed Project Section - Light */}
-      <section className="section-light" style={{ padding: '80px 24px' }}>
+      <section className="section-light" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
         <div className="container">
           <GlassCard delay={0.2} padding="40px">
             <span style={{ display: 'inline-block', background: 'var(--card-bg-dark)', color: '#F8FAFC', border: '1px solid rgba(0,0,0,0.1)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 600, marginBottom: '16px' }}>Completed Project</span>
