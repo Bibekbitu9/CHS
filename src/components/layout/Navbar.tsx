@@ -29,7 +29,7 @@ const Navbar = () => {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}
       style={{
-        background: scrolled ? 'rgba(250, 250, 235, 0.85)' : 'transparent',
+        background: scrolled ? 'rgba(15, 23, 30, 0.85)' : 'transparent',
         backdropFilter: scrolled ? 'blur(24px)' : 'none',
         borderBottom: scrolled ? '1px solid rgba(205, 127, 50, 0.15)' : 'none',
         transition: 'all 0.4s ease'
@@ -41,7 +41,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <Link to="/" className={styles.logo} style={{ color: scrolled ? 'var(--color-earth-dark)' : 'var(--color-ivory)' }}>
+          <Link to="/" className={styles.logo} style={{ color: 'var(--color-ivory)' }}>
             CHS <span style={{ color: 'var(--color-bronze)' }}>Odisha</span>
           </Link>
         </motion.div>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link 
                 to={link.path} 
                 className={styles.navLink}
-                style={{ color: scrolled ? 'var(--color-earth-dark)' : 'var(--color-ivory)' }}
+                style={{ color: 'var(--color-ivory)' }}
               >
                 {link.name}
               </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMobileMenuOpen}
-          style={{ color: scrolled ? 'var(--color-earth-dark)' : 'var(--color-ivory)' }}
+          style={{ color: 'var(--color-ivory)' }}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -94,14 +94,18 @@ const Navbar = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className={`${styles.mobileNav} ${styles.open}`}
-            style={{ background: 'var(--color-ivory)', borderTop: '1px solid rgba(205, 127, 50, 0.1)' }}
+            style={{ 
+              background: 'rgba(15, 23, 30, 0.95)', 
+              backdropFilter: 'blur(20px)',
+              borderTop: '1px solid rgba(205, 127, 50, 0.2)' 
+            }}
           >
             {links.map((link) => (
               <Link 
                 key={link.name} 
                 to={link.path} 
                 className={styles.navLink}
-                style={{ color: 'var(--color-earth-dark)' }}
+                style={{ color: 'var(--color-ivory)' }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}

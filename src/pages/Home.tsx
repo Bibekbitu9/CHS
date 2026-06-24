@@ -40,7 +40,7 @@ const Home = () => {
       <HeroSection />
 
       {/* About Snapshot */}
-      <section className={`${styles.section} ${styles.sectionLight}`}>
+      <section className={styles.section}>
         <div className={`container ${styles.aboutGrid}`}>
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -76,7 +76,7 @@ const Home = () => {
       </section>
 
       {/* Heritage Numbers */}
-      <section className={`${styles.section} ${styles.sectionDark}`}>
+      <section className={styles.section}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Heritage at a Glance</h2>
           <div className={styles.numbersGrid}>
@@ -89,7 +89,7 @@ const Home = () => {
       </section>
 
       {/* Featured Site */}
-      <section className={`${styles.section} ${styles.sectionLight}`}>
+      <section className={styles.section}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Featured Heritage Site</h2>
           <motion.div 
@@ -115,7 +115,7 @@ const Home = () => {
       </section>
 
       {/* Latest News & Events */}
-      <section className={`${styles.section} ${styles.sectionLight}`} style={{ backgroundColor: 'var(--color-ivory)' }}>
+      <section className={styles.section}>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -158,7 +158,7 @@ const Home = () => {
       </section>
 
       {/* Partners Strip */}
-      <section className={`${styles.section} ${styles.sectionLight}`} style={{ paddingTop: '40px', paddingBottom: '40px', borderTop: '1px solid rgba(0,0,0,0.05)' }}>
+      <section className={styles.section} style={{ paddingTop: '40px', paddingBottom: '40px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
           <div className={styles.partnersStrip}>
             <div className={styles.partner}>IGNCA</div>

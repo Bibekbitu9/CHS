@@ -180,7 +180,7 @@ const InternshipApplication = () => {
 
               <motion.div variants={itemVariants} className={styles.fieldGroup} style={{ marginBottom: '24px' }}>
                 <label htmlFor="field">Field of Study</label>
-                <select id="field" name="field" className={styles.inputGlass} required style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+                <select id="field" name="field" className={styles.inputGlass} required>
                   <option value="">Select your discipline</option>
                   <option value="archaeology">Archaeology & Field Research</option>
                   <option value="conservation">Art Conservation</option>

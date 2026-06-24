@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg, #fafaeb, #f4f5e6, #C19A6B, #CD7F32, #ffdcc1);
+  background: linear-gradient(-45deg, #0F171E, #1E293B, #CD7F32, #0F171E);
   background-size: 400% 400%;
   animation: bgGradient 15s ease infinite;
 }
@@ -84,8 +84,9 @@
 }
 
 .inputGlass:focus {
-  background: rgba(255, 255, 255, 0.8);
-  border-bottom: 2px solid var(--color-bronze);
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-ivory);
   outline: none;
   transform: translateY(-2px);
 }

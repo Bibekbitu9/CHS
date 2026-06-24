@@ -58,7 +58,7 @@ const About = () => {
                 <p style={{ fontSize: '1.1rem', color: 'var(--color-ivory)', maxWidth: '700px', margin: '0 auto 32px', lineHeight: 1.6 }}>
                   CHS offers structured internships for students of archaeology, history, architecture, conservation, anthropology, geography, digital heritage, and related fields. Direct engagement with heritage documentation methods and mentorship from senior professionals.
                 </p>
-                <a href="/internship" className="btn-primary" style={{ background: 'white', color: 'var(--color-earth-dark)' }}>Apply for Internship</a>
+                <a href="/internship" className="btn-primary" style={{ background: 'var(--glass-bg)', color: 'var(--color-ivory)' }}>Apply for Internship</a>
               </div>
             </GlassCard>
           </motion.div>

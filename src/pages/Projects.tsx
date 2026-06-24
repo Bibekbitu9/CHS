@@ -9,7 +9,7 @@ const Projects = () => {
         title="Projects & Fieldwork | Centre for Heritage Studies" 
         description="Explore the ongoing and completed heritage documentation and conservation projects by the Centre for Heritage Studies." 
       />
-      <div style={{ padding: '120px 24px 80px', minHeight: '100vh', background: 'var(--color-ivory)' }}>
+      <div style={{ padding: '120px 24px 80px', minHeight: '100vh' }}>
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Projects & Fieldwork</h1>

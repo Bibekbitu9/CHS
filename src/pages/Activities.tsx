@@ -9,7 +9,7 @@ const Activities = () => {
         title="Activities & Seminars | Centre for Heritage Studies" 
         description="Stay updated with the latest seminars, webinars, and awareness campaigns conducted by the Centre for Heritage Studies." 
       />
-      <div style={{ padding: '120px 24px 80px', minHeight: '100vh', background: 'var(--color-ivory)' }}>
+      <div style={{ padding: '120px 24px 80px', minHeight: '100vh' }}>
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Events & Activities</h1>
@@ -34,7 +34,7 @@ const Activities = () => {
             <p style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '24px' }}>
               Inaugurated in February 2025 as a premier platform for scholarly discourse on archaeology, heritage studies, and cultural conservation. The inaugural lecture was delivered by Prof. Dilip Kumar Chakrabarti.
             </p>
-            <button className="btn-primary" style={{ background: 'white', color: 'var(--color-earth-dark)' }}>Watch Recordings</button>
+            <button className="btn-primary" style={{ background: 'var(--glass-bg)', color: 'var(--color-ivory)' }}>Watch Recordings</button>
           </GlassCard>
         </div>
       </div>

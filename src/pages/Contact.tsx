@@ -9,7 +9,7 @@ const Contact = () => {
         title="Contact Us | Centre for Heritage Studies" 
         description="Get in touch with the Centre for Heritage Studies (CHS) for collaborations, inquiries, or more information." 
       />
-      <div style={{ padding: '120px 24px 80px', minHeight: '100vh', background: 'var(--color-ivory)' }}>
+      <div style={{ padding: '120px 24px 80px', minHeight: '100vh' }}>
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Contact Us</h1>
@@ -54,7 +54,7 @@ const Contact = () => {
                 <p style={{ lineHeight: 1.6, marginBottom: '24px' }}>
                   Have you noticed a heritage site at risk from encroachment, damage, or neglect? Report it to our Heritage Alert register.
                 </p>
-                <button className="btn-primary" style={{ background: 'white', color: 'var(--color-earth-dark)' }}>Report a Threat</button>
+                <button className="btn-primary" style={{ background: 'var(--glass-bg)', color: 'var(--color-ivory)' }}>Report a Threat</button>
               </GlassCard>
             </div>
           </div>

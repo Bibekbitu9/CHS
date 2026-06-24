@@ -10,15 +10,16 @@
   --color-earth-light: #D7CCC8;
   --color-terracotta: #E2725B;
   
-  /* Base */
-  --bg-main: #FAF9F6;
-  --text-main: #2C2C2C;
-  --text-muted: #5A5A5A;
+  /* Base (Updated to Dark Mode) */
+  --bg-main: #0F171E;
+  --text-main: #F1F5F9;
+  --text-muted: #94A3B8;
+  --color-surface-dim: rgba(255, 255, 255, 0.05);
   
   /* Glassmorphism */
-  --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.25) 100%);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+  --glass-bg: rgba(30, 41, 59, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
-  color: var(--color-earth-dark);
+  color: var(--color-ivory);
   margin-top: 0;
 }
 
@@ -97,11 +98,11 @@ a:hover {
 .btn-secondary {
   display: inline-block;
   background: transparent;
-  color: var(--color-earth-dark);
+  color: var(--color-ivory);
   padding: 10px 24px;
   border-radius: 30px;
   font-weight: 600;
-  border: 2px solid var(--color-earth-dark);
+  border: 2px solid var(--color-sandstone);
   cursor: pointer;
   transition: all 0.2s ease;
 }
