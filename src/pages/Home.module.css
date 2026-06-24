@@ -176,4 +176,16 @@
   .numbersGrid, .newsGrid {
     grid-template-columns: 1fr;
   }
+  .aboutGrid {
+    gap: 32px;
+  }
+  .imageStrip {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .stripImg {
+    width: calc((100% - 3 * 12px) / 4);
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
