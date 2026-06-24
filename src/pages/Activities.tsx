@@ -20,7 +20,7 @@ const Activities = () => {
           </motion.div>
 
           <h2 style={{ fontSize: '2.5rem', marginBottom: '32px' }}>Upcoming Events</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', gap: '32px' }}>
             <GlassCard delay={0.1}>
               <span style={{ color: 'var(--color-muted-teal)', fontWeight: 600, fontSize: '0.9rem' }}>June 2026</span>
               <h3 style={{ fontSize: '1.5rem', margin: '12px 0' }}>Bhubaneswar Temple Heritage Walk</h3>

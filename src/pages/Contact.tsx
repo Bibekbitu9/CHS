@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
           </motion.div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '64px' }}>
+          <div className="responsive-grid-contact">
             <GlassCard delay={0.1}>
               <h2 style={{ fontSize: '2rem', marginBottom: '32px' }}>Send us a message</h2>
               <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
