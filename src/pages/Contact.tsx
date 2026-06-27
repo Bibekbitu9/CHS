@@ -62,6 +62,32 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Collaborate with CHS Section - Dark */}
+      <section className="section-dark" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="container">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>Collaborate with CHS</h2>
+            <p className="text-muted" style={{ fontSize: '1.1rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '48px' }}>
+              CHS is a natural partner for institutions that wish to engage with Odisha's heritage in a rigorous, professional, and ethically grounded manner. We welcome collaborative proposals for joint research and documentation projects, co-organised events, technical advisory relationships, or formal memoranda of understanding.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '24px' }}>
+              <GlassCard delay={0.1} padding="32px">
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '16px', color: 'var(--color-ivory)' }}>Universities & Academics</h4>
+                <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>Departments in archaeology, history, architecture, anthropology, and environmental studies.</p>
+              </GlassCard>
+              <GlassCard delay={0.2} padding="32px">
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '16px', color: 'var(--color-ivory)' }}>Government & Agencies</h4>
+                <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>Departments and cultural agencies at the state and national level, and international research institutions.</p>
+              </GlassCard>
+              <GlassCard delay={0.3} padding="32px">
+                <h4 style={{ fontSize: '1.2rem', marginBottom: '16px', color: 'var(--color-ivory)' }}>Museums & Media</h4>
+                <p className="text-muted" style={{ fontSize: '0.95rem', lineHeight: 1.6 }}>Museums, cultural organisations, and media seeking authoritative partnership for heritage projects.</p>
+              </GlassCard>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </>
   );
 };

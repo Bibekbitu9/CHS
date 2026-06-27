@@ -166,6 +166,8 @@ const Home = () => {
             <div className={styles.partner}>Utkal University</div>
             <div className={styles.partner}>Deccan College Pune</div>
             <div className={styles.partner}>UCLA</div>
+            <div className={styles.partner}>Dept. of Culture, Govt. of Odisha</div>
+            <div className={styles.partner}>IGRMS Bhopal</div>
           </div>
         </div>
       </section>

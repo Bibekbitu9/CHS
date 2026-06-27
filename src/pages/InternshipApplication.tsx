@@ -27,6 +27,7 @@ const InternshipApplication = () => {
     setValidationErrors({});
     
     const formData = new FormData(e.currentTarget);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const data: Record<string, any> = Object.fromEntries(formData.entries());
     
     // Validate Resume
@@ -48,7 +49,7 @@ const InternshipApplication = () => {
         });
         data.resumeBase64 = base64;
         data.resumeName = resumeFile.name;
-      } catch (err) {
+      } catch {
         setError('Failed to process the resume file.');
         return;
       }
@@ -89,7 +90,7 @@ const InternshipApplication = () => {
       }
 
       setIsSuccess(true);
-    } catch (err) {
+    } catch {
       setError('An error occurred while submitting. Please try again later.');
     } finally {
       setIsSubmitting(false);
