@@ -1,0 +1,180 @@
+/* GlobalLoader.module.css */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-ivory, #FFFFF0);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.borderOuter {
+  position: absolute;
+  inset: 32px;
+  border: 1px solid rgba(205, 127, 50, 0.1);
+  pointer-events: none;
+}
+
+.borderInner {
+  position: absolute;
+  inset: 48px;
+  border: 1px solid rgba(205, 127, 50, 0.05);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .borderOuter {
+    inset: 16px;
+  }
+  .borderInner {
+    inset: 24px;
+  }
+}
+
+.parchment {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.wheelContainer {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .wheelContainer {
+    width: 192px;
+    height: 192px;
+  }
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: rgba(205, 127, 50, 0.05);
+  filter: blur(24px);
+}
+
+.svgWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wheel {
+  transform-origin: center;
+  animation: spin 12s linear infinite;
+}
+
+.bronze {
+  fill: #cd7f32;
+}
+
+.bronzeStroke {
+  stroke: #cd7f32;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-family: 'Libre Caslon Text', serif;
+  color: var(--color-bronze, #cd7f32);
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  width: 96px;
+  background-color: rgba(205, 127, 50, 0.2);
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 2rem;
+  color: var(--color-sandstone, #c19a6b);
+  letter-spacing: 0.4em;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.progressContainer {
+  width: 192px;
+  height: 1px;
+  background-color: rgba(205, 127, 50, 0.1);
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-sandstone, #c19a6b);
+  animation: progress-bar 2.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes progress-bar {
+  0% { width: 0%; opacity: 0.8; }
+  50% { width: 70%; opacity: 1; }
+  100% { width: 100%; opacity: 0.8; }
+}
+
+.status {
+  margin-top: 16px;
+  font-family: 'Hanken Grotesk', 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-earth-dark, #3E2723);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+}

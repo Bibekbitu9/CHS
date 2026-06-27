@@ -64,7 +64,7 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img src="/Images/(16)Ananta Sayi Vishnu, Saranga, Dhenkanal/14. Ananta Sayi Vishnu, Saranga (1).jpg" alt="Ananta Sayi Vishnu Site Fieldwork" style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+            <img src="/Images/(16)Ananta Sayi Vishnu, Saranga, Dhenkanal/14. Ananta Sayi Vishnu, Saranga (1).jpg" alt="Ananta Sayi Vishnu Site Fieldwork" loading="lazy" style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
             <div className={styles.imageStrip}>
               <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(10) Ravana Chhaya, Keonjhar/05. Sitabhinji, Keonjhar (1).jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
               <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(2) Athara Nala Bridge, Puri/1.JPG')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>

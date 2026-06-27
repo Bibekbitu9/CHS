@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import GlobalLoader from './components/ui/GlobalLoader';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -11,6 +12,7 @@ import InternshipApplication from './pages/InternshipApplication';
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <GlobalLoader />
       <Navbar />
       <main style={{ flex: 1 }}>
         <Routes>
