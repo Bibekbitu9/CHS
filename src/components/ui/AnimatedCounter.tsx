@@ -40,7 +40,7 @@ const AnimatedCounter = ({ end, suffix = '', label, duration = 2, delay = 0 }: A
       transition={{ duration: 0.5, delay }}
       style={{ textAlign: 'center' }}
     >
-      <div style={{ fontSize: '3rem', fontWeight: 700, fontFamily: 'Outfit, sans-serif', color: 'var(--color-sandstone)', marginBottom: '8px' }}>
+      <div style={{ fontSize: '3rem', fontWeight: 700, fontFamily: 'Libre Caslon Text, serif', color: 'var(--color-sandstone)', marginBottom: '8px' }}>
         {count.toLocaleString()}{suffix}
       </div>
       <div style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.4 }}>

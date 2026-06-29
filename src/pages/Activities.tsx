@@ -87,7 +87,7 @@ const Activities = () => {
               <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '32px' }}>
                 These programmes brought some of the country's most distinguished scholars to audiences across India and beyond, creating opportunities for students, researchers, and the public to engage with current thinking in heritage studies.
               </p>
-              <button className="btn-primary" style={{ background: 'transparent', color: 'var(--color-navy)', border: '1px solid var(--color-navy)' }}>Browse Archive</button>
+              <button className="btn-primary">Browse Archive</button>
             </motion.div>
           </div>
         </div>
