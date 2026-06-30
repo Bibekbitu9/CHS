@@ -43,7 +43,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <Link to="/" className={styles.logo} style={{ color: 'var(--color-ivory)' }}>
+            <Link to="/" className={styles.logo}>
               CHS <span style={{ color: 'var(--color-bronze)' }}>Odisha</span>
             </Link>
           </motion.div>

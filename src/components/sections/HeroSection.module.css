@@ -85,4 +85,7 @@
   .actions {
     flex-direction: column;
   }
+  .heroBackground {
+    background-attachment: scroll; /* Fixes cropping issues on mobile */
+  }
 }
