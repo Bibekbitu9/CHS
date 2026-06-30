@@ -7,7 +7,8 @@ const KnowledgePortal = () => {
     <>
       <SEO 
         title="Heritage Knowledge Portal | Centre for Heritage Studies" 
-        description="A living, growing, publicly accessible archive of Odisha's tangible and intangible cultural heritage." 
+        description="A living, growing, publicly accessible archive of Odisha's tangible and intangible cultural heritage, including an interactive Digital Heritage Map." 
+        keywords={['Odisha Digital Heritage Map', 'Tangible Heritage Archive', 'Intangible Cultural Heritage Odisha', 'Buddhist Sites Mapping', 'Odishan Temple Database']}
       />
       {/* Intro Section - Light */}
       <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>

@@ -9,6 +9,7 @@ const GetInvolved = () => {
       <SEO 
         title="Get Involved | Centre for Heritage Studies" 
         description="Join CHS as a member, volunteer, or intern. Support our work to document and preserve Odisha's cultural heritage." 
+        keywords={['Heritage Volunteer', 'Archaeology Internship', 'Adopt a Monument Odisha', 'Heritage Society Membership']}
       />
       
       {/* Intro Section - Light */}

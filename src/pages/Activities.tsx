@@ -7,7 +7,8 @@ const Activities = () => {
     <>
       <SEO 
         title="Activities & Seminars | Centre for Heritage Studies" 
-        description="Stay updated with the latest seminars, webinars, and awareness campaigns conducted by the Centre for Heritage Studies." 
+        description="Stay updated with the latest seminars, webinars, and awareness campaigns conducted by the Centre for Heritage Studies in Odisha." 
+        keywords={['Heritage Seminars', 'Archaeology Conferences', 'Webinars', 'Heritage Walks', 'Odisha Cultural Events']}
       />
       {/* Intro & Upcoming Events - Light */}
       <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>

@@ -8,7 +8,8 @@ const About = () => {
     <>
       <SEO 
         title="About Us | Centre for Heritage Studies" 
-        description="Learn about the mission, vision, and the executive body driving the Centre for Heritage Studies to preserve and document historical assets." 
+        description="Learn about the mission, vision, and the executive body driving the Centre for Heritage Studies to preserve and document historical assets across Odisha." 
+        keywords={['About CHS', 'Heritage Society Odisha', 'Executive Body', 'Archaeologists India', 'Cultural Preservation Society']}
       />
       {/* Intro Section - Light */}
       <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>

@@ -8,6 +8,7 @@ const Research = () => {
       <SEO 
         title="Research & Publications | Centre for Heritage Studies" 
         description="Access scholarly articles, excavation reports, heritage studies, research papers, and conference proceedings from CHS." 
+        keywords={['Odisha Archaeology Research', 'Excavation Reports India', 'Cultural Heritage Publications', 'Heritage Monographs', 'Kalinga Architecture Studies']}
       />
       
       {/* Intro Section - Light */}

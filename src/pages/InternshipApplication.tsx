@@ -138,7 +138,11 @@ const InternshipApplication = () => {
 
   return (
     <>
-      <SEO title="Apply for Internship | Centre for Heritage Studies" description="Apply for a structured internship in archaeology, history, and heritage documentation." />
+      <SEO 
+        title="Apply for Internship | Centre for Heritage Studies" 
+        description="Apply for a structured internship in archaeology, history, and heritage documentation at the Centre for Heritage Studies, Odisha." 
+        keywords={['Archaeology Internship India', 'Heritage Conservation Fellowship', 'Odisha History Internship']}
+      />
       <section className={`section-light ${styles.container}`}>
         <motion.div
           animate={{ y: [0, -10, 0] }}

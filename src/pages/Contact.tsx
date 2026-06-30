@@ -8,7 +8,8 @@ const Contact = () => {
     <>
       <SEO 
         title="Contact Us | Centre for Heritage Studies" 
-        description="Get in touch with the Centre for Heritage Studies (CHS) for collaborations, inquiries, or more information." 
+        description="Get in touch with the Centre for Heritage Studies (CHS) in Bhubaneswar, Odisha for collaborations, inquiries, or more information." 
+        keywords={['Contact CHS', 'Bhubaneswar Office', 'Heritage Alert', 'Heritage Society Contact']}
       />
       {/* Contact Section - Light */}
       <section className="section-light" style={{ padding: '120px 24px 80px', minHeight: '100vh' }}>

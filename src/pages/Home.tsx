@@ -33,10 +33,7 @@ const newsItems = [
 const Home = () => {
   return (
     <>
-      <SEO 
-        title="Centre for Heritage Studies | Preserving Odisha's Legacy" 
-        description="The Centre for Heritage Studies (CHS) is dedicated to documenting, conserving, and promoting the rich cultural and historical legacy of Odisha." 
-      />
+      <SEO />
       <HeroSection />
 
       {/* About Snapshot */}

@@ -112,7 +112,11 @@ const MembershipApplication = () => {
 
   return (
     <>
-      <SEO title="Apply for Membership | Centre for Heritage Studies" description="Apply to become a member of the Centre for Heritage Studies." />
+      <SEO 
+        title="Apply for Membership | Centre for Heritage Studies" 
+        description="Apply to become a member of the Centre for Heritage Studies and contribute to documenting Odisha's cultural legacy." 
+        keywords={['Heritage Society Membership', 'Join Archaeologists India', 'Odisha Cultural Membership']}
+      />
       <section className={`section-light ${styles.container}`}>
         <motion.div
           animate={{ y: [0, -10, 0] }}

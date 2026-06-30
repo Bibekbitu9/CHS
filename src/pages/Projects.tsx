@@ -7,7 +7,8 @@ const Projects = () => {
     <>
       <SEO 
         title="Projects & Fieldwork | Centre for Heritage Studies" 
-        description="Explore the ongoing and completed heritage documentation and conservation projects by the Centre for Heritage Studies." 
+        description="Explore the ongoing and completed heritage documentation and conservation projects by the Centre for Heritage Studies across Odisha." 
+        keywords={['Odisha Heritage Documentation', 'Archaeological Fieldwork', 'Konark Exploration', 'Manikapatna Ancient Port', 'LiDAR Survey Odisha']}
       />
       {/* Intro Section - Light */}
       <section className="section-light" style={{ paddingTop: '120px', paddingBottom: '80px' }}>

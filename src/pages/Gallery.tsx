@@ -7,7 +7,8 @@ const Gallery = () => {
     <>
       <SEO 
         title="Gallery & Media | Centre for Heritage Studies" 
-        description="Explore the visual archive of CHS: heritage sites, excavations, field documentation, events, and media coverage." 
+        description="Explore the visual archive of CHS: heritage sites, excavations, field documentation, events, and media coverage across Odisha." 
+        keywords={['Odisha Heritage Photos', 'Archaeological Site Images', 'Odisha Temples', 'Konark Photos', 'CHS Video Archive']}
       />
       
       {/* Intro Section - Light */}
