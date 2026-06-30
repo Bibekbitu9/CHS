@@ -15,9 +15,12 @@ import Gallery from './pages/Gallery';
 import GetInvolved from './pages/GetInvolved';
 import MembershipApplication from './pages/MembershipApplication';
 
+import ScrollToTop from './components/utils/ScrollToTop';
+
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <ScrollToTop />
       <GlobalLoader />
       <Navbar />
       <main style={{ flex: 1 }}>
