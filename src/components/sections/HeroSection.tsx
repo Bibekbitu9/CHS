@@ -40,8 +40,7 @@ const HeroSection = () => {
             }}
             className={styles.title}
           >
-            Preserving the Past, <br/>
-            <span className={styles.highlight}>Inspiring the Future.</span>
+            <span className={styles.highlight}>The Centre for Heritage Studies</span>
           </motion.h1>
           
           <motion.p 
@@ -51,7 +50,8 @@ const HeroSection = () => {
             }}
             className={styles.description}
           >
-            Odisha carries within its soil, stone, and living traditions one of the most extraordinary cultural legacies in the world. The Centre for Heritage Studies exists to ensure that this legacy is not lost — that it is documented, understood, conserved, and shared with the world.
+            Odisha carries within its soil, stone, and living traditions one of the most extraordinary cultural legacies in the world. Thousand-year-old temples rise from forested hills. Ancient ports lie buried beneath coastal sands. Sacred rituals, crafts, and performing arts passed down through generations continue to breathe life into communities across the state.<br /><br />
+            The Centre for Heritage Studies (CHS), Odisha exists to ensure that this legacy is not lost — that it is documented, understood, conserved, and shared with the world.
           </motion.p>
           
           <motion.div 

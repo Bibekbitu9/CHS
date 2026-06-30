@@ -14,8 +14,11 @@ const Projects = () => {
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Projects & Fieldwork</h1>
+            <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
+              Every claim CHS makes about Odisha's heritage is backed by fieldwork. The Projects section documents the actual work — the surveys, excavations, documentation exercises, and collaborative initiatives that constitute CHS's contribution to the understanding and preservation of Odisha's cultural legacy.
+            </p>
             <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6 }}>
-              Every claim CHS makes about Odisha's heritage is backed by fieldwork. The Projects section documents the actual work — the surveys, excavations, documentation exercises, and collaborative initiatives.
+              Since its establishment in 2008, CHS has undertaken projects funded by and in partnership with the Government of India's premier cultural bodies, the Archaeological Survey of India, leading Indian universities, and international academic institutions. Each project page provides full details of the project's objectives, methodology, team, findings, and significance.
             </p>
           </motion.div>
         </div>
@@ -27,9 +30,23 @@ const Projects = () => {
           <GlassCard delay={0.1} padding="40px">
             <span style={{ display: 'inline-block', background: 'rgba(205, 127, 50, 0.2)', color: 'var(--color-ivory)', border: '1px solid var(--color-bronze)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.85rem', fontWeight: 600, marginBottom: '16px' }}>Flagship Project</span>
             <h2 style={{ fontSize: '2.2rem', marginBottom: '24px' }}>Comprehensive Documentation of Odisha's Heritage</h2>
-            <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '24px' }}>
-              The most ambitious project in CHS's history — and arguably one of the most significant heritage documentation exercises ever undertaken in Odisha. Resolved in September 2025, the project aims to comprehensively document approximately 4,000 tangible heritage monuments and sites across all thirty districts within three years.
+            <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '16px' }}>
+              This is the most ambitious project in CHS's history — and arguably one of the most significant heritage documentation exercises ever undertaken in Odisha.
             </p>
+            <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '16px' }}>
+              Resolved at a meeting of the Centre on 2 September 2025 and to be financially supported by the Government of Odisha, the project aims to comprehensively document approximately 4,000 tangible heritage monuments and sites across all thirty districts of Odisha within a period of three years. No documentation effort of this scale has previously been attempted in the state.
+            </p>
+            <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '16px' }}>
+              What makes this project genuinely distinctive is its dual mandate. The first objective is comprehensive documentation of Odisha's tangible heritage — the physical monuments, archaeological sites, historic structures, and cultural landscapes that constitute the visible record of the state's civilisational history. The second objective, equally important, is the documentation of the intangible heritage associated with these physical sites: the rituals, community traditions, oral histories, living practices, and cultural meanings that give the monuments their living significance.
+            </p>
+            <p className="text-muted" style={{ fontSize: '1.1rem', lineHeight: 1.6, marginBottom: '24px' }}>
+              Complementing the documentation fieldwork, advanced Photogrammetry and LiDAR (Light Detection and Ranging) surveys will be undertaken through specialised agencies under the auspices of the Government of Odisha, in consultation with CHS. These technologies will produce highly accurate three-dimensional digital records of monuments and sites — records that will serve conservation planning, disaster risk management, academic research, and virtual heritage applications for decades to come.
+            </p>
+            <div style={{ borderLeft: '4px solid var(--color-bronze)', paddingLeft: '24px', marginBottom: '32px' }}>
+              <p style={{ fontSize: '1.2rem', color: 'var(--color-ivory)', fontStyle: 'italic', margin: 0, lineHeight: 1.4 }}>
+                For the first time, Odisha's heritage will be seen whole — documented not merely as a collection of individual sites, but as a living cultural landscape of extraordinary depth and diversity.
+              </p>
+            </div>
             <div style={{ display: 'flex', gap: '16px' }}>
               <button className="btn-primary">View Interactive Map</button>
             </div>

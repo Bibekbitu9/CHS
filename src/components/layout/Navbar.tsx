@@ -16,9 +16,12 @@ const Navbar = () => {
   const links = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+    { name: 'Knowledge', path: '/knowledge-portal' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Research', path: '/research' },
     { name: 'Activities', path: '/activities' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Get Involved', path: '/get-involved' },
   ];
 
   return (

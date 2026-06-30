@@ -14,8 +14,11 @@ const Activities = () => {
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '24px' }}>Events & Activities</h1>
+            <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
+              Fieldwork generates data; research generates knowledge; but it is through its public events and activities that CHS turns that knowledge into a shared cultural asset.
+            </p>
             <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '64px' }}>
-              CHS is not only a research body — it is a community of scholars and heritage advocates who believe that knowledge must be shared, discussed, and put to work. From intimate heritage walks along Bhubaneswar's temple trail to national conferences attended by leading scholars, our events reflect the full spectrum of our mission.
+              Since 2008, CHS has organised an ongoing calendar of events designed to bring heritage out of the archive and into the public sphere. These activities range from highly specialised academic conferences to accessible public lectures, from practical training workshops to guided heritage walks for school children.
             </p>
           </motion.div>
 

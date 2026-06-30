@@ -9,6 +9,12 @@ import Activities from './pages/Activities';
 import Contact from './pages/Contact';
 import InternshipApplication from './pages/InternshipApplication';
 
+import KnowledgePortal from './pages/KnowledgePortal';
+import Research from './pages/Research';
+import Gallery from './pages/Gallery';
+import GetInvolved from './pages/GetInvolved';
+import MembershipApplication from './pages/MembershipApplication';
+
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
@@ -18,10 +24,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/knowledge-portal" element={<KnowledgePortal />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/research" element={<Research />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/internship" element={<InternshipApplication />} />
+          <Route path="/membership" element={<MembershipApplication />} />
         </Routes>
       </main>
       <Footer />

@@ -18,8 +18,17 @@ const About = () => {
             <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
               The Centre for Heritage Studies was born out of a conviction shared by a group of Odisha's most distinguished archaeologists and heritage scholars: that the state's extraordinary cultural legacy deserved a dedicated institution — independent, professionally driven, and committed to rigorous documentation, conservation, and public engagement.
             </p>
+            <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
+              On 19 January 2008, CHS was formally registered as a society under Regd. No. 22663/253 of 2007–2008, bringing together historians, archaeologists, anthropologists, conservation professionals, architects, and heritage enthusiasts under one roof. The founding members brought with them decades of experience from the Archaeological Survey of India, Odisha's state archaeology department, and some of India's premier academic institutions.
+            </p>
+            <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
+              From the very beginning, CHS set itself apart by combining scholarly rigour with practical action. Within weeks of its registration, the Centre co-organised a national workshop on Intangible Cultural Heritage at Konark — one of Odisha's most iconic World Heritage Sites. In the months that followed, it undertook its first major documentation project, recording over a thousand monuments and heritage sites across Odisha for the IGNCA National Databank on Indian Art and Culture.
+            </p>
+            <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6, marginBottom: '24px' }}>
+              That spirit of purposeful work has continued without interruption. Across seventeen years, CHS has conducted archaeological explorations along the Puri–Konark–Chilika coast, carried out excavations at prehistoric and early historic sites in Khurda and Puri districts, published research, organised national conferences, and run an ongoing lecture and outreach programme that has brought some of the world's leading heritage scholars to Bhubaneswar.
+            </p>
             <p className="text-muted" style={{ fontSize: '1.2rem', maxWidth: '800px', lineHeight: 1.6 }}>
-              On 19 January 2008, CHS was formally registered as a society under Regd. No. 22663/253 of 2007–2008, bringing together historians, archaeologists, anthropologists, conservation professionals, architects, and heritage enthusiasts under one roof. Today, CHS stands at a significant threshold, undertaking a comprehensive survey of approximately 4,000 heritage monuments and sites across all thirty districts of Odisha.
+              Today, CHS stands at a significant threshold. The organisation is undertaking the most ambitious documentation project in its history — a comprehensive survey of approximately 4,000 heritage monuments and sites across all thirty districts of Odisha. It is simultaneously building its digital presence, creating a platform that will make the knowledge and expertise accumulated over seventeen years accessible to researchers, students, policymakers, communities, and heritage enthusiasts across the globe.
             </p>
           </motion.div>
         </div>
@@ -74,17 +83,17 @@ const About = () => {
             <h2 style={{ fontSize: '2.5rem', marginBottom: '32px' }}>Our Objectives</h2>
             <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
               {[
-                'To undertake archaeological surveys, explorations, and excavations to discover, study, and interpret cultural remains.',
-                'To promote the conservation, protection, interpretation, and presentation of both tangible and intangible heritage.',
-                'To identify, survey, document, map, and create comprehensive inventories of cultural properties.',
-                'To establish and maintain a comprehensive digital repository of heritage resources.',
-                'To encourage scholarly research and to disseminate knowledge through publications and digital platforms.',
-                'To foster awareness and appreciation of heritage among students, local communities, and the wider public.',
-                'To develop a vibrant professional networking hub for heritage practitioners.',
-                'To collaborate with government departments, universities, research institutions, and international agencies.',
-                'To promote the use of emerging technologies such as GIS mapping, photogrammetry, and 3D scanning.',
-                'To support responsible heritage management and sustainable cultural tourism initiatives.',
-                'To encourage active participation of communities in documenting and safeguarding cultural heritage.'
+                'To undertake archaeological surveys, explorations, and excavations to discover, study, and interpret cultural remains that illuminate the historical and cultural development of Odisha.',
+                'To promote the conservation, protection, interpretation, and presentation of both tangible and intangible heritage — including monuments, archaeological sites, historic structures, traditional settlements, cultural landscapes, crafts, performing arts, rituals, folklore, and living traditions.',
+                'To identify, survey, document, map, and create comprehensive inventories of cultural properties and heritage resources across Odisha using both traditional and digital methodologies.',
+                'To establish and maintain a comprehensive digital repository of heritage resources, research findings, photographs, maps, manuscripts, reports, oral histories, audiovisual archives, and digital heritage assets.',
+                'To encourage scholarly research in archaeology, history, anthropology, architecture, conservation, museum studies, heritage management, and cultural tourism, and to disseminate such knowledge through publications, seminars, conferences, and digital platforms.',
+                'To foster awareness and appreciation of heritage among students, local communities, and the wider public through heritage walks, lectures, seminars, workshops, exhibitions, and outreach programmes.',
+                'To develop a vibrant professional networking hub for archaeologists, historians, anthropologists, architects, conservation professionals, museum specialists, researchers, students, and heritage practitioners.',
+                'To collaborate with government departments, universities, research institutions, museums, cultural organizations, and international agencies for technical expertise, supervision of archaeological works, research collaboration, and resource mobilisation.',
+                'To promote the use of emerging technologies such as GIS mapping, photogrammetry, 3D scanning, virtual reality, and augmented reality for heritage documentation, conservation, interpretation, and public engagement.',
+                'To support responsible heritage management and sustainable cultural tourism initiatives that contribute to the preservation of heritage while generating educational, social, and economic benefits for local communities.',
+                'To encourage active participation of communities, institutions, and citizens in documenting, safeguarding, and promoting cultural heritage — recognising that heritage conservation is a shared responsibility.'
               ].map((obj, i) => (
                 <li key={i} style={{ padding: '16px 0', borderBottom: '1px solid rgba(0,0,0,0.05)', display: 'flex', gap: '16px' }}>
                   <span style={{ color: 'var(--color-bronze)', fontWeight: 600 }}>•</span>
