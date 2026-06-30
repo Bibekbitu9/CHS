@@ -14,7 +14,7 @@ const Footer = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
   };
 
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8 }}
         >
           <h4 className={styles.bigTitle}>Odisha's Heritage,<br />Preserved for Tomorrow.</h4>
           <Link to="/membership" className={styles.ctaButton}>Become a Member</Link>
