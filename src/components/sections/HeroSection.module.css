@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -17,7 +17,6 @@
   background-image: url('/Images/(1) Shri Jagannath Temple/1.jpg'); /* Actual Hero Image */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Parallax effect */
   z-index: -1;
 }
 
@@ -94,8 +93,5 @@
   }
   .actions {
     flex-direction: column;
-  }
-  .heroBackground {
-    background-attachment: scroll; /* Fixes cropping issues on mobile */
   }
 }

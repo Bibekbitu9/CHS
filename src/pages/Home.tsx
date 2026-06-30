@@ -60,14 +60,18 @@ const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
+            className={styles.videoContainer}
           >
-            <img src="/Images/(16)Ananta Sayi Vishnu, Saranga, Dhenkanal/14. Ananta Sayi Vishnu, Saranga (1).jpg" alt="Ananta Sayi Vishnu Site Fieldwork" loading="lazy" style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
-            <div className={styles.imageStrip}>
-              <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(10) Ravana Chhaya, Keonjhar/05. Sitabhinji, Keonjhar (1).jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-              <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(2) Athara Nala Bridge, Puri/1.JPG')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-              <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(3) Varahi Temple, Chaurasi, Puri/3.JPG')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-              <div className={styles.stripImg} style={{ backgroundImage: "url('/Images/(1) Shri Jagannath Temple/1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-            </div>
+            <video 
+              src="/video/Monument_Transformation.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              preload="metadata"
+              poster="/Images/(16)Ananta Sayi Vishnu, Saranga, Dhenkanal/14. Ananta Sayi Vishnu, Saranga (1).jpg"
+              style={{ width: '100%', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
+            />
           </motion.div>
         </div>
       </section>
